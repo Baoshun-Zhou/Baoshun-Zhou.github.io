@@ -327,3 +327,13 @@
     }
   }
 }
+
+.sidebar .author__employer {
+  display: flex;
+  align-items: center;
+  gap: 0em;
+
+  a {
+    margin-bottom: 0;
+  }
+}
