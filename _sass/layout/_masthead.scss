@@ -63,6 +63,10 @@
   &--lg {
     padding-right: 2em;
     font-weight: 700;
+
+    @include breakpoint($large) {
+      transform: translateX(-2em);
+    }
   }
 }
 
