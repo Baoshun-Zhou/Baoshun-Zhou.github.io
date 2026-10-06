@@ -14,17 +14,24 @@ author_profile: true
 <!-- New style rendering if publication categories are defined -->
 {% if site.publication_category %}
   {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
+    {% assign category_posts = site.publications | where: "category", category[0] %}
+    {% if category_posts.size > 0 %}
+      <h2>{{ category[1].title }}</h2><hr />
+      {% if category[0] == 'manuscripts' or category[0] == 'conferences' %}
+        {% assign sorted_posts = category_posts | sort: "year" | reverse %}
+        {% assign year_groups = sorted_posts | group_by: "year" %}
+        {% for year_group in year_groups %}
+          <h3>{{ year_group.name }}</h3>
+          {% for post in year_group.items %}
+            {% include archive-single.html %}
+          {% endfor %}
+        {% endfor %}
+      {% else %}
+        {% for post in category_posts reversed %}
+          {% include archive-single.html %}
+        {% endfor %}
       {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
+    {% endif %}
   {% endfor %}
 {% else %}
   {% for post in site.publications reversed %}

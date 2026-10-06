@@ -23,6 +23,11 @@
     @include suffix(0 of 12);
   }
 
+  @media screen and (min-width: 1400px) {
+    width: calc(#{span(10 of 12)} + 4rem);
+    margin-right: -4rem;
+  }
+
   .page__inner-wrap {
     @include full();
 
@@ -105,6 +110,18 @@
     margin-top: -1.5em;
     padding-left: 1.25rem;
   }
+}
+
+.page--publication .page__content h2 {
+  margin-top: 1em;
+}
+
+.page--publication .page__content > h2:first-child {
+  margin-top: 0.5em;
+}
+
+.page--publication .page__content > h2:first-child + p {
+  text-align: justify;
 }
 
 .page__hero {

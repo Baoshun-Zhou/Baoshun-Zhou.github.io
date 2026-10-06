@@ -15,6 +15,11 @@
     @include suffix(0 of 12);
   }
 
+  @media screen and (min-width: 1400px) {
+    width: calc(#{span(10 of 12)} + 4rem);
+    margin-right: -4rem;
+  }
+
   a {
     text-decoration: underline;
 
@@ -47,6 +52,16 @@
   a + a {
     opacity: 0.5;
   }
+}
+
+.archive__item-title--publication {
+  font-family: $global-font-family;
+  font-size: 1em;
+  font-weight: normal;
+}
+
+.archive__publication-citation {
+  font-size: 0.9em;
 }
 
 /* remove border*/
