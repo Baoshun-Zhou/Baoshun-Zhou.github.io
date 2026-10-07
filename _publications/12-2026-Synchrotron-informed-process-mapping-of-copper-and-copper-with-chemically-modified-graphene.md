@@ -13,8 +13,8 @@ citation: 'Bhagavath, S., Hong, Y., Zhou, B., Wang, Y., Kim, K., Getley, A. C. M
 Laser Powder Bed Fusion (LPBF) enables the production of complex components for advanced propulsion, energy and transport applications, to name a few. LPBF of highly reflective materials, e.g. pure Cu, suffer from poor laser-matter interactions with near-infrared lasers, lowering part quality. We developed and blended a Chemically Modified Graphene (CMG) additive with Cu, termed Cu-CMG, designed for LPBF. We used a combination of in situ synchrotron X-ray imaging, high-fidelity process modelling, optical, electron and X-ray microscopy to devise the printability, surface roughness and defect process maps of Cu and Cu-CMG over 50 laser power and scan velocity combinations. The CMG additive increases the absorptivity of Cu, widens the optimal LPBF regime of Cu by 3.5 times and increased the parameters with good surface finish by 2 times. Our work shows a new pathway to additive manufacturing of materials with low near-infrared absorption, enabling the development of new product applications, including electrical machines and heat exchangers.
 
 ## Keywords
-- Chemically modified graphene
+- Chemically Modified Graphene
 - Copper
-- Laser powder bed fusion
-- Near-infrared laser absorption
-- Synchrotron imaging
+- Laser Powder Bed Fusion
+- Near-infrared Laser Absorption
+- Synchrotron Imaging

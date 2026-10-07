@@ -16,12 +16,13 @@ author_profile: true
   {% for category in site.publication_category  %}
     {% assign category_posts = site.publications | where: "category", category[0] %}
     {% if category_posts.size > 0 %}
-      <h2>{{ category[1].title }}</h2><hr />
+      <h2 class="publication-category-title">{{ category[1].title }}</h2>
+      <hr class="publication-category-divider" />
       {% if category[0] == 'manuscripts' or category[0] == 'conferences' %}
         {% assign sorted_posts = category_posts | sort: "year" | reverse %}
         {% assign year_groups = sorted_posts | group_by: "year" %}
         {% for year_group in year_groups %}
-          <h3>{{ year_group.name }}</h3>
+          <h3 class="publication-year">{{ year_group.name }}</h3>
           {% for post in year_group.items %}
             {% include archive-single.html %}
           {% endfor %}

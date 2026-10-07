@@ -61,10 +61,10 @@ function updateNav() {
   // update masthead height and the body/sidebar top padding
   var mastheadHeight = $('.masthead').height();
   $('body').css('padding-top', mastheadHeight + 'px');
-  if ($(".author__urls-wrapper button").is(":visible")) {
-    $(".sidebar").css("padding-top", "");
-  } else {
+  if ($(".sidebar").css("position") === "fixed") {
     $(".sidebar").css("padding-top", mastheadHeight + "px");
+  } else {
+    $(".sidebar").css("padding-top", "");
   }
 
 }

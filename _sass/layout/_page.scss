@@ -16,6 +16,16 @@
   }
 }
 
+@media screen and (max-width: 924px) {
+  #main {
+    margin-top: 0.5em;
+  }
+
+  #main .sidebar {
+    margin-top: 0;
+  }
+}
+
 .page {
   @include breakpoint($large) {
     @include span(10 of 12 last);
@@ -121,7 +131,12 @@
 }
 
 .page--publication .page__content > p {
+  font-size: 0.9em;
   text-align: justify;
+}
+
+.page--publication .page__content > ul {
+  font-size: 0.9em;
 }
 
 .page__hero {

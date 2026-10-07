@@ -16,7 +16,7 @@ the implementation at forward speeds.
 
 ## Keywords
 - Hydroelastics
-- Generalized modes
+- Generalized Modes
 - Ships
 - Timoshenko Beam
 - Shear Effect

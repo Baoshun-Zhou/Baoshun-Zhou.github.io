@@ -15,6 +15,6 @@ This work is part of the ongoing implementation of generalized modes for ship hy
 ## Keywords
 - Hydroelastics
 - Ships
-- Generalized modes
-- Hydrostatic models
-- Finite difference methods
+- Generalized Modes
+- Hydrostatic Models
+- Finite Difference Methods
