@@ -2,6 +2,7 @@
 title: "An efficient method to estimate the structural stiffness of large periodic floating plate-like structures"
 collection: publications
 category: manuscripts
+permalink: /publication/An-efficient-method-to-estimate-the-structural-stiffness-of-large-periodic-floating-plate-like-structures
 year: 2025
 venue: "Ocean Engineering"
 paperurl: 'https://doi.org/10.1016/j.oceaneng.2025.121636'

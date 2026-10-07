@@ -34,6 +34,10 @@
     {% if use_publication_citation %}
       {% assign linked_title = '[' | append: post.title | append: '](' | append: base_path | append: post.url | append: ')' %}
       {% assign linked_citation = post.citation | replace_first: post.title, linked_title %}
+      {% if post.paperurl %}
+        {% assign linked_paperurl = '[' | append: post.paperurl | append: '](' | append: post.paperurl | append: ')' %}
+        {% assign linked_citation = linked_citation | replace: post.paperurl, linked_paperurl %}
+      {% endif %}
       <div class="archive__publication-citation" itemprop="headline">{{ linked_citation | markdownify }}</div>
     {% else %}
     <h2 class="archive__item-title{% if post.collection == 'publications' %} archive__item-title--publication{% endif %}" itemprop="headline">

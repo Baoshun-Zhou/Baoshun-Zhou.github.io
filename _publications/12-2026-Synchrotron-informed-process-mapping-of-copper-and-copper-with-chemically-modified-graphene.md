@@ -2,6 +2,7 @@
 title: "Synchrotron-informed process mapping of copper and copper with chemically modified graphene"
 collection: publications
 category: manuscripts
+permalink: /publication/Synchrotron-informed-process-mapping-of-copper-and-copper-with-chemically-modified-graphene
 year: 2026
 venue: "Carbon"
 paperurl: 'https://doi.org/10.1016/j.carbon.2026.121835'
