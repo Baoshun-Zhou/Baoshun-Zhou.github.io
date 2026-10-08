@@ -1,0 +1,32 @@
+{% if site.author.googlescholar %}
+  <div class="wordwrap">You can also find my articles on <a href="{{ site.author.googlescholar }}">my Google Scholar profile</a>.</div>
+{% endif %}
+
+{% include base_path %}
+
+{% if site.publication_category %}
+  {% for category in site.publication_category %}
+    {% assign category_posts = site.publications | where: "category", category[0] %}
+    {% if category_posts.size > 0 %}
+      <h3 class="publication-category-title">{{ category[1].title }}</h3>
+      {% if category[0] == 'manuscripts' or category[0] == 'conferences' %}
+        {% assign sorted_posts = category_posts | sort: "year" | reverse %}
+        {% assign year_groups = sorted_posts | group_by: "year" %}
+        {% for year_group in year_groups %}
+          <h4 class="publication-year">{{ year_group.name }}</h4>
+          {% for post in year_group.items %}
+            {% include archive-single.html %}
+          {% endfor %}
+        {% endfor %}
+      {% else %}
+        {% for post in category_posts reversed %}
+          {% include archive-single.html %}
+        {% endfor %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+{% else %}
+  {% for post in site.publications reversed %}
+    {% include archive-single.html %}
+  {% endfor %}
+{% endif %}

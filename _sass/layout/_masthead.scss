@@ -5,7 +5,7 @@
 .masthead {
   position: fixed;
   background: var(--global-bg-color);
-  height: fit-content;
+  height: $masthead-height;
   top: 0;
   width: 100%;
 
@@ -25,14 +25,9 @@
   }
 
   &__inner-wrap {
-    @include container;
     @include clearfix;
-    padding: 0.5em 1em;
+    padding: 8px 1em;
     font-family: $sans-serif-narrow;
-
-    @include breakpoint($x-large) {
-      max-width: $x-large;
-    }
 
     nav {
       z-index: 10;
@@ -42,6 +37,16 @@
       text-decoration: none;
     }
   }
+}
+
+.masthead__inner-wrap .greedy-nav a {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  line-height: 25px;
+}
+
+.masthead__inner-wrap .greedy-nav .visible-links > .masthead__menu-item--lg {
+  white-space: nowrap;
 }
 
 .masthead__menu {
@@ -62,11 +67,9 @@
 
   &--lg {
     padding-right: 2em;
+    padding-left: 1em;
+    font-size: 20px;
     font-weight: 700;
-
-    @include breakpoint($large) {
-      transform: translateX(-2em);
-    }
   }
 }
 
@@ -76,6 +79,11 @@
   border-bottom: 2px solid var(--global-text-color);
   pointer-events: none; /* Move this here */
   cursor: default; /* Move this here too */
+}
+
+.masthead__menu-item--lg.selected a {
+  pointer-events: auto;
+  cursor: pointer;
 }
 
 .masthead__menu-item.selected a:hover {

@@ -37,3 +37,20 @@
     "layout/sidebar",
     "layout/json_cv"
 ;
+
+a,
+a:hover,
+a:focus,
+a:active,
+.archive__item-title {
+  text-decoration: none !important;
+}
+
+figcaption a,
+.masthead .masthead__menu-item.selected a {
+  border-bottom: 0 !important;
+}
+
+.greedy-nav .visible-links a::before {
+  display: none;
+}

@@ -15,11 +15,6 @@
     @include suffix(0 of 12);
   }
 
-  @media screen and (min-width: 1400px) {
-    width: calc(#{span(10 of 12)} + 4rem);
-    margin-right: -4rem;
-  }
-
   a {
     text-decoration: underline;
 
@@ -47,14 +42,14 @@
 
 .publication-year {
   margin: 0.75em 0 0.35em;
+  color: var(--global-text-color);
+  font-size: $type-size-6;
+  font-weight: 600;
 }
 
 .publication-category-title {
-  margin: 1em 0 0.25em;
-}
-
-.publication-category-divider {
-  margin: 0.5em 0;
+  margin: 1.5em 0 0.5em;
+  font-size: $type-size-5;
 }
 
 .archive__item-title {
@@ -64,6 +59,11 @@
   a + a {
     opacity: 0.5;
   }
+}
+
+.archive__talk-date {
+  color: var(--global-text-color);
+  font-weight: 600;
 }
 
 .archive__item-title--publication {
@@ -76,7 +76,7 @@
   display: list-item;
   list-style-type: disc;
   margin: 0 0 0.5em 1.25em;
-  font-size: 0.8em;
+  font-size: 14px;
   text-align: left;
   overflow-wrap: anywhere;
 
@@ -101,6 +101,13 @@
   & + p {
     text-indent: 0;
   }
+}
+
+.archive__talk-date,
+.archive__talk-content,
+.page__content .archive__talk-date,
+.page__content .archive__talk-content {
+  font-size: 14px;
 }
 
 .archive__item-teaser {

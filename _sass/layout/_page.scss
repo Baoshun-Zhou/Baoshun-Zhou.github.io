@@ -4,25 +4,53 @@
 
 #main {
   @include container;
+  max-width: none;
   @include clearfix;
   margin-top: 2em;
   padding-left: 1em;
   padding-right: 1em;
   animation: intro 0.3s both;
   animation-delay: 0.35s;
-
-  @include breakpoint($x-large) {
-    max-width: $x-large;
-  }
 }
 
-@media screen and (max-width: 924px) {
+@media screen and (max-width: 960px) {
   #main {
     margin-top: 0.5em;
   }
 
   #main .sidebar {
     margin-top: 0;
+  }
+
+  #main > .sidebar,
+  #main > .archive,
+  #main > .page {
+    float: none;
+    width: auto;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 961px) {
+  #main {
+    display: grid;
+    grid-template-columns: 220px minmax(0, 1fr);
+    column-gap: 1.25em;
+    align-items: start;
+  }
+
+  #main > .sidebar {
+    max-width: none;
+  }
+
+  #main > .sidebar,
+  #main > .archive,
+  #main > .page {
+    float: none;
+    width: auto;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
@@ -31,11 +59,6 @@
     @include span(10 of 12 last);
     @include prefix(0 of 12);
     @include suffix(0 of 12);
-  }
-
-  @media screen and (min-width: 1400px) {
-    width: calc(#{span(10 of 12)} + 4rem);
-    margin-right: -4rem;
   }
 
   .page__inner-wrap {
@@ -58,6 +81,19 @@
   }
 }
 
+.page__title#about,
+.home-section {
+  scroll-margin-top: calc(#{$masthead-height} + 1rem);
+}
+
+.home-section + .home-section {
+  margin-top: 2rem;
+}
+
+#talks {
+  min-height: calc(100vh - #{$masthead-height} - 2.5rem);
+}
+
 .page__lead {
   font-family: $global-font-family;
   font-size: $type-size-4;
@@ -66,6 +102,13 @@
 .page__content {
 
   h2 {
+
+.page__content h2.home-section__title {
+  margin-bottom: 1rem;
+  padding-bottom: 0;
+  border-bottom: 0;
+  font-size: $type-size-4;
+}
     padding-bottom: 0.5em;
     border-bottom: 1px solid var(--global-border-color);
   }
@@ -165,9 +208,6 @@
       padding-left: 1em;
       padding-right: 1em;
 
-      @include breakpoint($x-large) {
-        max-width: $x-large;
-      }
     }
 
     .page__title,
@@ -430,4 +470,9 @@
   margin-bottom: 10px;
   font-size: $type-size-6;
   text-transform: uppercase;
+}
+
+.page--publication .page__content p,
+.page--publication .page__content li {
+  font-size: 15px;
 }

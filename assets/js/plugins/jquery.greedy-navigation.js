@@ -15,10 +15,26 @@ var breaks = [];
 
 function updateNav() {
 
+  var forceCollapse = window.matchMedia('(max-width: 960px)').matches;
   var availableSpace = $btn.hasClass('hidden') ? $nav.width() : $nav.width() - $btn.width() - 30;
 
-  // The visible list is overflowing the nav
-  if ($vlinks.width() > availableSpace) {
+  if (forceCollapse) {
+    while ($hlinks.children().length > 0) {
+      if ($vlinks_persist_tail.parent().is($vlinks)) {
+        $hlinks.children().first().insertBefore($vlinks_persist_tail);
+      } else {
+        $hlinks.children().first().appendTo($vlinks);
+      }
+    }
+
+    breaks = [];
+    while ($vlinks.children("*:not(.masthead__menu-item--lg)").length > 0) {
+      breaks.push($vlinks.width());
+      $vlinks.children("*:not(.masthead__menu-item--lg)").last().prependTo($hlinks);
+    }
+
+    $btn.removeClass("hidden");
+  } else if ($vlinks.width() > availableSpace) {
 
     while ($vlinks.width() > availableSpace && $vlinks.children("*:not(.persist)").length > 0) {
       // Record the width of the list
@@ -39,7 +55,7 @@ function updateNav() {
     // There is space for another item in the nav
     while (breaks.length > 0 && availableSpace > breaks[breaks.length - 1]) {
       // Move the item to the visible list
-      if ($vlinks_persist_tail.children().length > 0) {
+      if ($vlinks_persist_tail.parent().is($vlinks)) {
         $hlinks.children().first().insertBefore($vlinks_persist_tail);
       } else {
         $hlinks.children().first().appendTo($vlinks);
@@ -61,11 +77,6 @@ function updateNav() {
   // update masthead height and the body/sidebar top padding
   var mastheadHeight = $('.masthead').height();
   $('body').css('padding-top', mastheadHeight + 'px');
-  if ($(".sidebar").css("position") === "fixed") {
-    $(".sidebar").css("padding-top", mastheadHeight + "px");
-  } else {
-    $(".sidebar").css("padding-top", "");
-  }
 
 }
 
@@ -81,6 +92,11 @@ screen.orientation.addEventListener("change", function () {
 $btn.on('click', function () {
   $hlinks.toggleClass('hidden');
   $(this).toggleClass('close');
+});
+
+$hlinks.on('click', 'a', function () {
+  $hlinks.addClass('hidden');
+  $btn.removeClass('close');
 });
 
 updateNav();
