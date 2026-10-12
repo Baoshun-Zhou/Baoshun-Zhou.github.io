@@ -2,7 +2,7 @@
 title: "Prediction Method and Validation Study of Tensile Performance of Reinforced Armor Layer in Marine Flexible Pipe/Cables"
 collection: publications
 category: manuscripts
-permalink: /publication/Prediction-Method-and-Validation-Study-of-Tensile-Performance-of-Reinforced-Armor-Layer-in-Marine-Flexible-Pipe/Cables
+permalink: /publication/Prediction-Method-and-Validation-Study-of-Tensile-Performance-of-Reinforced-Armor-Layer-in-Marine-Flexible-Pipe(Cables)
 year: 2022
 venue: "Journal of Marine Science and Engineering"
 paperurl: 'https://doi.org/10.3390/jmse10050642'
