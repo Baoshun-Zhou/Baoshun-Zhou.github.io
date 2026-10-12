@@ -6,7 +6,7 @@ permalink: /publication/Hydroelastic-solutions-using-a-high-order-finite-differe
 year: 2023
 venue: "23rd Nordic Maritime Universities Workshop"
 paperurl: 'https://findit.dtu.dk/en/catalog/640b8c8f59a40f3a3e977227'
-citation: 'Zhou, B., Amini Afshar, M., Bingham, H. B., & Shao, Y. (2023). Hydroelastic solutions using a high-order finite difference method based on the mode functions of a Timoshenko beam. Abstract from 23rd Nordic Maritime Universities Workshop, Göteborg, Sweden.'
+citation: 'Zhou, B., Amini Afshar, M., Bingham, H. B., & Shao, Y. (2023). Hydroelastic solutions using a high-order finite difference method based on the mode functions of a Timoshenko beam. Abstract from 23rd Nordic Maritime Universities Workshop, Göteborg, Sweden. https://findit.dtu.dk/en/catalog/640b8c8f59a40f3a3e977227'
 ---
 
 ## Abstract

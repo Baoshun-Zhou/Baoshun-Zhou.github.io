@@ -6,7 +6,7 @@ permalink: /publication/Hydroelastic-Analysis-of-Ships-using-a-High-Order-Finite
 year: 2024
 venue: "35th Symposium on Naval Hydrodynamics"
 paperurl: 'https://findit.dtu.dk/en/catalog/677993df4760f9a7f9a6b07b'
-citation: 'Zhou, B., Amini-Afshar, M., Shao, Y., & Bingham, H. (2024). Hydroelastic Analysis of Ships using a High-Order Finite Difference Method on Overlapping Grids. Paper presented at 35th Symposium on Naval Hydrodynamics, Nantes, France.'
+citation: 'Zhou, B., Amini-Afshar, M., Shao, Y., & Bingham, H. (2024). Hydroelastic Analysis of Ships using a High-Order Finite Difference Method on Overlapping Grids. Paper presented at 35th Symposium on Naval Hydrodynamics, Nantes, France. https://findit.dtu.dk/en/catalog/677993df4760f9a7f9a6b07b'
 ---
 
 ## Abstract

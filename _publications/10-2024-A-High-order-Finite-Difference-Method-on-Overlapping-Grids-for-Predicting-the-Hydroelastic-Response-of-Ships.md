@@ -1,7 +1,7 @@
 ---
 title: "A High-order Finite Difference Method on Overlapping Grids for Predicting the Hydroelastic Response of Ships"
 collection: publications
-category: books
+category: thesis
 permalink: /publication/A-High-order-Finite-Difference-Method-on-Overlapping-Grids-for-Predicting-the-Hydroelastic-Response-of-Ships
 year: 2024
 venue: "Technical University of Denmark"

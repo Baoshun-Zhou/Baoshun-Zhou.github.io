@@ -42,6 +42,8 @@
 
   #main > .sidebar {
     max-width: none;
+    position: sticky;
+    top: calc(#{$masthead-height} + 1em);
   }
 
   #main > .sidebar,
