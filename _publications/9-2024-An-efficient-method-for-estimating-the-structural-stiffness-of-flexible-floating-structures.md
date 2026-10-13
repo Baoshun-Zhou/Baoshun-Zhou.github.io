@@ -3,7 +3,7 @@ title: "An efficient method for estimating the structural stiffness of flexible 
 collection: publications
 category: manuscripts
 permalink: /publication/An-efficient-method-for-estimating-the-structural-stiffness-of-flexible-floating-structures
-year: 2024
+year: 2023
 venue: "Marine Structures"
 paperurl: 'https://doi.org/10.1016/j.marstruc.2023.103527'
 citation: 'Zhou, B., Yang, Z., Amini-Afshar, M., Shao, Y., & Bingham, H. B. (2024). An efficient method for estimating the structural stiffness of flexible floating structures. Marine Structures, 93, Article 103527. https://doi.org/10.1016/j.marstruc.2023.103527'
