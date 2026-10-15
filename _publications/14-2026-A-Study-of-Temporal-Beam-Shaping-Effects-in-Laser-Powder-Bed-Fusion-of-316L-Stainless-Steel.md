@@ -1,8 +1,8 @@
 ---
-title: "A Study of Temporal Beam Shaping Effects in Laser Powder Bed Fusion of 316L Stainless Steel"
+title: "A study of temporal beam shaping effects in laser powder bed fusion of 316L stainless steel"
 collection: publications
 category: conferences
-permalink: /publication/A-Study-of-Temporal-Beam-Shaping-Effects-in-Laser-Powder-Bed-Fusion-of-316L-Stainless-Steel
+permalink: /publication/A-study-of-temporal-beam-shaping-effects-in-laser-powder-bed-fusion-of-316L-stainless-steel
 year: 2026
 venue: "14th CIRP Conference on Photonic Technologies"
 paperurl: 'https://doi.org/10.1016/j.procir.2026.07.129'

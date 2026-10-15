@@ -1,12 +1,12 @@
 ---
-title: "A High-order Finite Difference Method on Overlapping Grids for Predicting the Hydroelastic Response of Ships"
+title: "A high-order finite difference method on overlapping grids for predicting the hydroelastic response of ships"
 collection: publications
 category: thesis
-permalink: /publication/A-High-order-Finite-Difference-Method-on-Overlapping-Grids-for-Predicting-the-Hydroelastic-Response-of-Ships
+permalink: /publication/A-high-order-finite-difference-method-on-overlapping-grids-for-predicting-the-hydroelastic-response-of-ships
 year: 2024
 venue: "Technical University of Denmark"
 paperurl: 'https://findit.dtu.dk/en/catalog/6675796ca83eb417d322c154'
-citation: 'Zhou, B. (2024). A High-order Finite Difference Method on Overlapping Grids for Predicting the Hydroelastic Response of Ships. Technical University of Denmark. https://findit.dtu.dk/en/catalog/6675796ca83eb417d322c154'
+citation: 'Zhou, B. (2024). A high-order finite difference method on overlapping grids for predicting the hydroelastic response of ships. Technical University of Denmark. https://findit.dtu.dk/en/catalog/6675796ca83eb417d322c154'
 ---
 
 ## Abstract

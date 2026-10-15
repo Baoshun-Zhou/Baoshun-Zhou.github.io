@@ -1,12 +1,12 @@
 ---
-title: "Hydroelastic Solutions using a High-order Finite Difference Method on Overlapping Grids"
+title: "Hydroelastic solutions using a high-order finite difference method on overlapping grids"
 collection: publications
 category: conferences
-permalink: /publication/Hydroelastic-Solutions-using-a-High-order-Finite-Difference-Method-on-Overlapping-Grids
+permalink: /publication/Hydroelastic-solutions-using-a-high-order-finite-difference-method-on-overlapping-grids
 year: 2022
 venue: "9th International Conference Hydroelasticity in Marine Technology"
 paperurl: 'https://findit.dtu.dk/en/catalog/6317e088b36594313d8ddf24'
-citation: 'Zhou, B., Amini-Afshar, M., Bingham, H. B., & Shao, Y. (2022). Hydroelastic Solutions using a High-order Finite Difference Method on Overlapping Grids. Paper presented at 9th International Conference Hydroelasticity in Marine Technology, Rome, Italy. https://findit.dtu.dk/en/catalog/6317e088b36594313d8ddf24'
+citation: 'Zhou, B., Amini-Afshar, M., Bingham, H. B., & Shao, Y. (2022). Hydroelastic solutions using a high-order finite difference method on overlapping grids. Paper presented at 9th International Conference Hydroelasticity in Marine Technology, Rome, Italy. https://findit.dtu.dk/en/catalog/6317e088b36594313d8ddf24'
 ---
 
 ## Abstract
